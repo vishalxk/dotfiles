@@ -1,3 +1,6 @@
 # dotfiles
 
-Kent's Doddfiles... get it dot, dodd; yeah you get it.
+## Thanks to...
+
+- [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+- [Kent C. Dodds](https://github.com/kentcdodds/dotfiles)

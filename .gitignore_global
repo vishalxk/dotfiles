@@ -1,8 +1,6 @@
 # Mac
 .DS_Store
-
-# WebStorm
-.idea/
+Desktop.ini
 
 # npm
 npm-debug.log
@@ -10,30 +8,18 @@ npm-debug.log
 # yarn
 yarn-error.log
 
-# VIM
-*.un~
-Session.vim
-.netrwhist
-*~
-*.swp
-.lvimrc
-
 # VS Code
 .vscode/
-# localhistory
+
+# misc
 .history
-
-# PayPal project specific stuff
 .nvmrc
-.agignore
-
-# Over-arching stuff
 *.ignored/
 *.ignored.*
-
-# git
 *.patch
-
-# eslint
 .eslintcache
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
 
