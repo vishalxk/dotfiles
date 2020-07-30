@@ -1,5 +1,11 @@
 # dotfiles
 
+## Installation
+
+```
+  git clone https://github.com/Kamalnrf/dotfiles.git && cd dotfiles && cat ./macos | bash
+```
+
 ## Thanks to...
 
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)

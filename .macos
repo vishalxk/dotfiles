@@ -51,7 +51,9 @@ echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/dotfiles/.functions" "${HOME}/.functions"
+ln -s "${HOME}/dotfiles/.aliases" "${HOME}/.aliases"
 ln -s "${HOME}/dotfiles/.hushlogin" "${HOME}/.hushlogin"
+ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
 
 
 # get bat and delta all configured
