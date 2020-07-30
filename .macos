@@ -23,7 +23,7 @@ echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "Brew Install"
-brew install git gh watchman tree bat 
+brew install git gh watchman tree bat delta leiningen
 
 echo "Installing Node"
 curl -L https://git.io/n-install | bash
@@ -32,11 +32,12 @@ echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
 echo "Installing few global npm packages"
-npm install --global serve 
+npm install --global serve expo-cli
 
 echo "Installing apps with brew cask"
 brew cask install alfred google-chrome firefox brave-browser visual-studio-code \
-1password suspicious-package spotify slack docker iterm2 android-studio notion
+1password suspicious-package spotify slack docker iterm2 android-studio notion \
+adoptopenjdk/openjdk/adoptopenjdk8
 
 echo "Generating an RSA token for GitHub"
 mkdir -p ~/.ssh
@@ -44,7 +45,6 @@ touch ~/.ssh/config
 ssh-keygen -t rsa -b 4096 -C "kamalnrf@gmail.com"
 echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
 eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/id_rsa
 echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste that into GitHub"
 
 ## CLONING AND RUNNING OHER DOTFILES
