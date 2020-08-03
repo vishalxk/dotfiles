@@ -22,11 +22,11 @@ mkdir -p "${HOME}/workspace"
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-echo "Brew Install"
-brew install git gh watchman tree bat delta leiningen
-
 echo "Installing Node"
 curl -L https://git.io/n-install | bash
+
+echo "Brew Install"
+brew install git gh watchman tree bat delta leiningen yarn clojure/tools/clojure
 
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
