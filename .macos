@@ -20,7 +20,7 @@ echo "Making the workspace directory"
 mkdir -p "${HOME}/workspace"
 
 echo "Installing homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Installing Node"
 curl -L https://git.io/n-install | bash
@@ -35,7 +35,7 @@ echo "Installing few global npm packages"
 npm install --global serve expo-cli
 
 echo "Installing apps with brew cask"
-brew cask install alfred google-chrome firefox brave-browser visual-studio-code \
+brew install --cask alfred google-chrome firefox brave-browser visual-studio-code \
 1password suspicious-package spotify slack docker iterm2 android-studio notion \
 adoptopenjdk/openjdk/adoptopenjdk8
 
