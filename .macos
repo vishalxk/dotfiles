@@ -23,10 +23,11 @@ echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Installing Node"
-curl -L https://git.io/n-install | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+nvm install node
 
 echo "Brew Install"
-brew install git gh watchman tree bat delta leiningen yarn clojure/tools/clojure
+brew install git gh watchman tree bat delta yarn
 
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
@@ -35,7 +36,7 @@ echo "Installing few global npm packages"
 npm install --global serve expo-cli
 
 echo "Installing apps with brew cask"
-brew install --cask alfred google-chrome firefox brave-browser visual-studio-code \
+brew install --cask raycast google-chrome firefox brave-browser visual-studio-code \
 1password suspicious-package spotify slack docker iterm2 android-studio notion \
 adoptopenjdk/openjdk/adoptopenjdk8
 
