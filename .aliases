@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Trash
+alias rm="trash"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
