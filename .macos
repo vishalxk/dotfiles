@@ -24,10 +24,12 @@ echo "Installing homebrew"
 
 echo "Installing Node"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install node
 
 echo "Brew Install"
-brew install git watchman tree bat delta yarn trash
+brew install git watchman tree bat git-delta yarn trash
 
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
