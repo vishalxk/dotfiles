@@ -81,7 +81,8 @@ CDPATH=.:$HOME:$HOME/code:$HOME/Desktop
 
 autoload -Uz compinit && compinit
 
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_HOME=$HOME/Library/Android/sdk
