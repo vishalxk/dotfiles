@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-  git clone https://github.com/Kamalnrf/dotfiles.git && cd dotfiles && cat ./macos | bash
+  git clone https://github.com/Kamalnrf/dotfiles.git && cd dotfiles && cat .macos | bash
 ```
 
 ## Thanks to...
