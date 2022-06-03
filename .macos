@@ -40,7 +40,7 @@ npm install --global serve expo-cli
 echo "Installing apps with brew cask"
 brew install --cask raycast google-chrome firefox brave-browser visual-studio-code \
 1password suspicious-package spotify slack docker iterm2 android-studio notion \
-adoptopenjdk/openjdk/adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk8 discord
 
 echo "Generating an RSA token for GitHub"
 mkdir -p ~/.ssh
